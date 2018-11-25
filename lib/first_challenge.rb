@@ -17,7 +17,7 @@ def first_challenge
     data.collect do |attribute, value|
       if attribute == :favorite_icecream_flavors
           value.each do |flavor|
-            flavor.delete_if? {|word| word == "strawberry"}
+            flavor.slice! "strawberry"
           end
         end
       end
