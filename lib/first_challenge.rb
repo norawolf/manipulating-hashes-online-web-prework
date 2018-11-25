@@ -14,7 +14,7 @@ def first_challenge
   }
 
   contacts.each do |person, data|
-    data.collect do |attribute, value|
+    data.each do |attribute, value|
       if attribute == :favorite_icecream_flavors
           value.each do |flavor|
             flavor.slice! "strawberry"
