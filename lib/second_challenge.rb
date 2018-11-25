@@ -8,7 +8,7 @@ def second_challenge
   }
 
   #code your solution here!
-groceries.value
-  
+groceries.values
+
 
 end
