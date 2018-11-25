@@ -15,21 +15,16 @@ def first_challenge
     }
   }
 
-# iterating through entire hash
-  # contacts.each do |person, data|
-  #  data.collect do |attribute, value|
-    #  if attribute == :favorite_icecream_flavors
-    #      value.each do |flavor|
-    #        flavor.slice! "strawberry"
-    #      end
-    #    end
-    #  end
-  #  end
 
-contacts["Freddie Mercury"].each do |attribute, value|
-binding.pry
-  puts "#{attribute}: #{value}"
-
+  contacts.each do |person, data|
+    data.collect do |attribute, value|
+      if attribute == :favorite_icecream_flavors
+          value.each do |flavor|
+            flavor.slice! "strawberry"
+          end
+        end
+      end
+    end
 end
 
 
