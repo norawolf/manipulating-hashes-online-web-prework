@@ -24,6 +24,10 @@ def first_challenge
     #  end
   #  end
 
+contacts["Freddie Mercury"].each do |attribute, value|
+  puts "#{attribute}: #{value}"
+  binding.pry
+end
 
 
   #remember to return your newly altered contacts hash!
