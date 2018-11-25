@@ -27,8 +27,9 @@ def first_challenge
   #  end
 
 contacts["Freddie Mercury"].each do |attribute, value|
+binding.pry
   puts "#{attribute}: #{value}"
-  binding.pry
+
 end
 
 
